@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft Windows</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face{
+            font-family:Segoe;
+            src: url(Segoe\ UI.ttf)
+        }
+        @font-face{
+            font-family:SegoeB;
+            src: url(Segoe\ UI\ Bold.ttf)
+        }
+    </style>
 </head>
-<body>
+<body class="box-border m-0 p-0 font-[Segoe]">
     <!-- SEARCH -->
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px; height: 20px;"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg> -->
 
@@ -16,5 +25,73 @@
     <!-- ARROW DOWN -->
     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z"/></svg> -->
 
+    <nav class="flex h-[54px]">
+        <div class="grp-1 gap-5 flex items-center">
+            <img src="Images/Microsoft-Logo.png" class="w-[8rem] h-[55%] ml-20 border-r-2 border-black pr-4 py-[3px]">
+            <p class="text-[18px] font-[Segoe] font-semibold">Windows</p>
+        
+            <div class="flex items-center">
+                <p class="text-[13px] hover:cursor-pointer hover:underline hover:underline-offset-8">About Windows</p>
+                <img src="Images/Downarrow.png" class="w-5 h-5 mt-1" alt="">
+            </div>
+        
+            <div class="flex items-center hover:cursor-pointer hover:underline hover:underline-offset-8">
+            <p class="text-[13px]">Get Windows</p>
+            <img src="Images/Downarrow.png" class="w-5 h-5 mt-1" alt="">
+            </div>
+        
+            <div class="flex items-center hover:cursor-pointer hover:underline hover:underline-offset-8">
+            <p class="text-[13px]">Shop PCs</p>
+            <img src="Images/Downarrow.png" class="w-5 h-5 mt-1" alt="">
+            </div>
+        
+            <div class="flex items-center hover:cursor-pointer hover:underline hover:underline-offset-8">
+            <p class="text-[13px]">Get help</p>
+            <img src="Images/Downarrow.png" class="w-5 h-5 mt-1" alt="">
+            </div>
+        
+            <p class="text-[13px] hover:cursor-pointer hover:underline hover:underline-offset-8">For business</p>
+        </div>
+    
+        <div class="grp-2 gap-4 flex ml-auto mr-20 items-center">
+            <div class="flex items-center">
+            <p class="text-[13px] hover:cursor-pointer hover:underline hover:underline-offset-8">All Microsoft</p>
+            <img src="Images/Downarrow.png" class="w-5 h-5 mt-1" alt="">
+            </div>
+
+            <div class="flex gap-1 items-center">
+            <p class="text-[13px] hover:cursor-pointer hover:underline hover:underline-offset-8">Search</p>
+            <img src="Images/Searchicon.png" class="w-5" alt="">
+            </div>
+
+            <div class="flex gap-1 items-center hover:cursor-pointer">
+            <p class="text-[13px] ml-4">Sign in</p>
+            <img src="Images/Signin.png" class="w-[38px]" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <div class="animation-line h-8 bg-[#E3E3E3]">
+
+    </div>
+
+    <!--SECTION 1-->
+    <div class="sec1 flex pl-32 gap-9 pr-20 pt-12 mb-20">
+        <div class="left w-[36%] mt-9">
+            <div class="dash w-[60px] h-[4px] bg-gradient-to-r from-[#0067B8] to-[#50E6FF]"></div>
+
+            <p style="line-height:4.5rem;" class="text-[62px] font-semibold mt-7">Make the everyday easier with Windows</p>
+            <p style="line-height: normal;" class="text-[18px] mt-4">Whether you're gaming, studying, running a business, or running a household, Windows 11<br> is equipped with the tools you need to succeed. Explore streamlined new features for every way you work, learn, and play.</p>
+            <button class="text-[15px] hover:underline hover:underline-offset-4 hover:bg-[#005DA6] bg-[#0078D4] px-12 py-[10px] mt-7 rounded-md text-white font-semibold">Get Windows 11</button>
+            <p class="flex items-center gap-1 hover:underline hover:underline-offset-8 hover:cursor-pointer hover:gap-2 duration-150 text-[16px] mt-6 font-semibold text-[#0078D4]">Continue to business version <svg class="text-[#0078D4] mt-1" viewBox="0 0 24 24" fill="none" class="dig-UIIcon dig-UIIcon--standard" width="24" height="24" role="presentation" focusable="false"><path d="M5 11.75h12m-5.25-6.5 6.25 6.5-6.25 6.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" vector-effect="non-scaling-stroke"></path></svg></p>
+        </div>
+
+        <div class="right">
+            <img class="rounded-lg" src="Images/Home-Image.png">
+        </div>
+    </div>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
